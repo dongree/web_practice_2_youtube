@@ -13,6 +13,7 @@
       src="https://kit.fontawesome.com/3895695ec3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,92 +26,97 @@
         <i class="fas fa-ellipsis-v"></i>
       </div>
     </header>
+
     <section class="player">
       <video controls src="video/1min science.mp4"></video>
     </section>
-    <section class="info">
-      <div class="metadata">
-        <ul class="hashtag">
-          <li>#DreamCoding</li>
-          <li>#dreamCoders</li>
-          <li>#Ellie</li>
-        </ul>
-        <div class="titleAndButton">
-          <span class="title"
-            >클론코딩 유튜브 사이트 따라 만들기 (HTML+CSS 연습편, 웹 포트폴리오)
-            | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
-          </span>
-          <button class="moreBtn">
-            <i class="fas fa-caret-down"></i>
-          </button>
-        </div>
-        <span class="views">1M views 1 month ago</span>
-      </div>
-      <ul class="actions">
-        <li>
-          <button><i class="fas fa-thumbs-up"></i></button>
-        </li>
-        <li>
-          <button><i class="fas fa-thumbs-down"></i></button>
-        </li>
-        <li>
-          <button><i class="fas fa-share"></i></button>
-        </li>
-        <li>
-          <button><i class="fas fa-plus"></i></button>
-        </li>
-        <li>
-          <button><i class="fab fa-font-awesome-flag"></i></button>
-        </li>
-      </ul>
-      <div class="channel">
+
+    <div class="infoAndUpNext">
+      <section class="info">
         <div class="metadata">
-          <img src="image/lions.jpg" alt="" />
-          <div class="info">
-            <spna class="name">드림코딩 by 엘리</spna>
-            <span class="subscribers">1M subscirbers</span>
+          <ul class="hashtag">
+            <li>#DreamCoding</li>
+            <li>#dreamCoders</li>
+            <li>#Ellie</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp"
+              >클론코딩 유튜브 사이트 따라 만들기 (HTML+CSS 연습편, 웹
+              포트폴리오) | 프론트엔드 개발자 입문편: HTML, CSS, Javascript
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
           </div>
+          <span class="views">1M views 1 month ago</span>
         </div>
-        <button class="subscribe">subscribe</button>
-      </div>
-    </section>
-    <section class="upNext">
-      <span class="title">Up next</span>
-      <ul>
-        <li class="items">
-          <img src="image/lions.jpg" alt="" />
-          <div class="info">
-            <span class="title">프론트 엔드 쏼라쏼라</span>
-            <span class="name">드림코딩 by 엘리</span>
-            <span class="views">82K views</span>
+        <ul class="actions">
+          <li>
+            <button><i class="active fas fa-thumbs-up"></i>1K</button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i>0</button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i>share</button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i>save</button>
+          </li>
+          <li>
+            <button><i class="fab fa-font-awesome-flag"></i>report</button>
+          </li>
+        </ul>
+        <div class="channel">
+          <div class="metadata">
+            <img src="image/lions.jpg" alt="" />
+            <div class="info">
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="subscribers">1M subscirbers</span>
+            </div>
           </div>
-          <button class="moreBtn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </li>
-        <li class="items">
-          <img src="image/lions.jpg" alt="" />
-          <div class="info">
-            <span class="title">백 엔드 쏼라쏼라</span>
-            <span class="name">드림코딩 by 엘리</span>
-            <span class="views">95K views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </li>
-        <li class="items">
-          <img src="image/lions.jpg" alt="" />
-          <div class="info">
-            <span class="title">풀스텍 쏼라쏼라</span>
-            <span class="name">드림코딩 by 엘리</span>
-            <span class="views">100K views</span>
-          </div>
-          <button class="moreBtn">
-            <i class="fas fa-ellipsis-v"></i>
-          </button>
-        </li>
-      </ul>
-    </section>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="image/lions.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">프론트 엔드 쏼라쏼라</span>
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="image/lions.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">백 엔드 쏼라쏼라</span>
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">95K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="image/lions.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">풀스텍 쏼라쏼라</span>
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">100K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
