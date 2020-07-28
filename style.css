@@ -76,7 +76,7 @@ header .icons .fa-search {
   max-width: 600px;
 }
 
-body > .info {
+body .infoAndUpNext > .info {
   padding: var(--padding);
 }
 
@@ -236,7 +236,7 @@ body > .info {
   flex-direction: column;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
   .infoAndUpNext {
     flex-direction: row;
     margin: var(--padding);
