@@ -1,27 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Something</title>
-    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3895695ec3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <span class="js-weather"></span>
-    <div class="js-clock">
-      <h1 class="js-title"></h1>
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <section class="player">
+      <video controls src="video/dreamcoding.mp4"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+      <section class="info">
+        <div class="metadata">
+          <ul class="hashtag">
+            <li>#DreamCoding</li>
+            <li>#dreamCoders</li>
+            <li>#Ellie</li>
+          </ul>
+          <div class="titleAndButton">
+            <span class="title clamp">
+              코딩을 빨리 배우는 법 (온라인 강의로 배울때 200% 효과적으로
+              배우기)
+            </span>
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="views">1M views 1 month ago</span>
+        </div>
+        <ul class="actions">
+          <li>
+            <button><i class="active fas fa-thumbs-up"></i>1K</button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i>0</button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i>share</button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i>save</button>
+          </li>
+          <li>
+            <button><i class="fab fa-font-awesome-flag"></i>report</button>
+          </li>
+        </ul>
+        <div class="channel">
+          <div class="metadata">
+            <img src="image/allie.jpg" alt="" />
+            <div class="info">
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="subscribers">1M subscirbers</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+        </div>
+      </section>
+
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="image/1.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title">개발자의 데스크 셋업 (My desk tour)</span>
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">82K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="image/2.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title"
+                >신입 개발자들이 제일 많이 하는 실수들 | 연봉을 올리고 싶다면
+                이렇게 하지 마세요 😜</span
+              >
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">95K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="image/3.jpg" alt="" /></div>
+            <div class="info">
+              <span class="title"
+                >개발자 연봉, 연봉 1억, 2억 이상 받기 가능할까? (국내 대기업
+                부터 해외 취업까지, feat 해외 개발자)</span
+              >
+              <span class="name">드림코딩 by 엘리</span>
+              <span class="views">100K views</span>
+            </div>
+            <button class="moreBtn">
+              <i class="fas fa-ellipsis-v"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Wirte a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <script src="bg.js"></script>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="weather.js"></script>
   </body>
 </html>
